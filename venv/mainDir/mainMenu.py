@@ -2,6 +2,7 @@ import os as o
 import time as t
 from pandas.errors import EmptyDataError
 import pandas as pd
+from TeleBot.brain import *
 
 
 def menu_iniziale():
@@ -9,6 +10,7 @@ def menu_iniziale():
     Benvenuto!
     1) Carica dataset di prova.
     2) Carica dataset da path.
+    3) Avvia bot.
     0) Exit.
     ''')
 
@@ -42,6 +44,19 @@ def menu_iniziale():
         except BaseException:
             print("Errore di caricamento del dataset. ")
             return menu_iniziale()
+
+    elif toss == "3":
+        print("Avvio bot in corso...")
+        t.sleep(0.5)
+        botaut()
+        print()
+        bott = input("Press q: ")
+        if "q":
+            t.sleep(0.5)
+            return menu_iniziale()
+
+
+
 
     elif toss == "0":
         print("A presto!")
