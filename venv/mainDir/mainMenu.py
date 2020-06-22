@@ -54,9 +54,7 @@ def menu_iniziale():
         if "q":
             t.sleep(0.5)
             return menu_iniziale()
-
-
-
+        
 
     elif toss == "0":
         print("A presto!")
