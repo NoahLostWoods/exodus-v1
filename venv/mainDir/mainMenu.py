@@ -48,14 +48,7 @@ def menu_iniziale():
     elif toss == "3":
         print("Avvio bot in corso...")
         t.sleep(0.5)
-        botaut()
-        print()
-        bott = input("Press q: ")
-        if "q":
-            t.sleep(0.5)
-            return menu_iniziale()
-        
-
+        handle()
     elif toss == "0":
         print("A presto!")
         exit(0)
