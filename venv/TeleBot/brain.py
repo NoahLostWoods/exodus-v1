@@ -11,7 +11,7 @@ def handle(msg):
         bot.sendMessage(chat_id, msg['text'])
         bot.sendMessage(chat_id, "Ciao mio creatore!")
         
-bot = tp.Bot('1259372892:AAEkQCx4Qje_ZUtFXyBPfZdcGwM0-Q-_tYI')
+bot = tp.Bot(TOKEN_HERE)
 MessageLoop(bot, handle).run_as_thread()
 print("Listening...")
 
